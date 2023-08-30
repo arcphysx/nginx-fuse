@@ -4,4 +4,4 @@
 nginx
 
 # Run gcsfuse in the foreground
-gcsfuse --implicit-dirs --foreground "$BUCKET_NAME" "$DEFAULT_WORKDIR"
+gcsfuse --implicit-dirs --foreground -o ro "$BUCKET_NAME" "$DEFAULT_WORKDIR"
